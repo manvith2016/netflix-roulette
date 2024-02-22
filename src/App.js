@@ -1,6 +1,6 @@
 import './App.css';
-import Counter from './components/counterComponent/counter';
-import SearchForm from './components/searchComponent/SearchForm';
+import { Counter } from './components/counterComponent/counter';
+import { SearchForm } from './components/searchComponent/SearchForm';
 
 function App() {
   return (
