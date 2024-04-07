@@ -8,6 +8,7 @@ export const GenreSelection = ({ genres, selectedGenre, onSelect }) => {
             {genres.map((item) => (
                 <button
                     className={selectedGenre === item ? 'selected-genre' : ''}
+                    data-testid={selectedGenre === item ? 'selected-genre' : ''}
                     onClick={() => onSelect(item)}
                 >
                     {item}
