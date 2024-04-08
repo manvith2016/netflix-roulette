@@ -28,5 +28,5 @@ GenreSelection.propTypes = {
 GenreSelection.defaultProps = {
     selectedGenre: 'All',
     genres: ['All', 'Documentary', 'Comedy', 'Horror'],
-    onSelect: (genre) => {console.log(genre)},
+    onSelect: (genre) => { console.log(genre) },
 };
