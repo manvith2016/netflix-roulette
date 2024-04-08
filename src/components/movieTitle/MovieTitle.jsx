@@ -8,7 +8,7 @@ const MovieTitle = ({ movieTileData, onViewMovieSelect, onEditMovieSelect, onDel
     return (
         <div className="col-sm-12 col-md-3 col-lg-2 movieTile" onClick={()=>onTileSelected(movieTileData)}>
             <div className="item d-flex flex-column">
-                <img src={movieTileData?.imageURL} onError={(e) => e.target.src='/dummy_poster.jpeg'} className="card-img-top" alt="..." />
+                <img src={movieTileData?.imageURL} onError={(e) => e.target.src='/Batman.jpeg'} className="card-img-top" alt="..." />
                 <div className="d-flex flex-column px-2">
                     <div className="d-flex justify-content-between">
                         <span className="title" data-testid="movieName">{movieTileData?.movieName}</span>

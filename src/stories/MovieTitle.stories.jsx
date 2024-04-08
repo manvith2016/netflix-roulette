@@ -20,8 +20,8 @@ export default {
     },
 };
 
-const imageURL = "http://localhost/dummy_poster.jpeg";
-const movieName = "Black Panther";
+const imageURL = "http://localhost/Batman.jpeg";
+const movieName = "Batman";
 const releaseYear = "2023";
 const generes = ["Action", "Adventure", "Fantasy"]
 
