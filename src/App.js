@@ -261,9 +261,9 @@ function App() {
                   generes: movie?.genres,
                   ...movie,
                 }}
-                onViewMoviewSelect={viewMovieData}
-                onEditMoviewSelect={editMovieData}
-                onDeleteMoviewSelect={deleteMovieData}
+                onViewMovieSelect={viewMovieData}
+                onEditMovieSelect={editMovieData}
+                onDeleteMovieSelect={deleteMovieData}
                 onTileSelected={onTileSelected}
               ></MovieTitle>
             ))}
@@ -282,7 +282,6 @@ function App() {
             <DeleteMovie movieInfo={deleteMovieDialog.movieInfo} onDeleteMovie={onDeleteMovie}></DeleteMovie>
           </Dialog>
         )}  
-          <img src="/logo.png" />
         </footer>
       </div>
     </>
