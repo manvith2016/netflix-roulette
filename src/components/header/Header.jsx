@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet, useParams, useSearchParams } from "react-router-dom";
 import { SearchForm } from '../searchComponent/SearchForm';
 
-const Header = ({ selectedMovieData, showMovieInfoPanel, toggleMovieInfoPanel, onSearch }) => {
+const Header = ({ selectedMovieData, showMovieInfoPanel, toggleMovieInfoPanel, onSearch, addMovie }) => {
     let { movieId } = useParams();
     const [searchParams] = useSearchParams();
     const query = searchParams.get('query') || "Guardians of the Galaxy Vol. 3";
@@ -11,7 +11,8 @@ const Header = ({ selectedMovieData, showMovieInfoPanel, toggleMovieInfoPanel, o
             {!movieId &&
                 <SearchForm inputTextVal={query} onSearch={onSearch} ></SearchForm>
             }
-            <Outlet></Outlet>
+            <Outlet></Outlet> 
+            <button onClick={()=>{addMovie()}}>Add Movie</button>
         </header>
     );
 }

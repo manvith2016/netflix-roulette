@@ -164,6 +164,10 @@ function App() {
     alert("=====viewMovieData======="+ str)
   }
 
+  const addMovieData = () => {
+    navigate("/movie/add")
+  }
+  
   const editMovieData = (movieData) => {
     console.log("editMovieData: ", movieData)
     // alert("editMovieData: "+ movieData)
@@ -225,6 +229,7 @@ function App() {
         showMovieInfoPanel={showMovieInfoPanel}
         toggleMovieInfoPanel={toggleMovieInfoPanel}
         onSearch={onSearch}
+        addMovie={addMovieData}
       ></Header>
       <div className="main">
         <div className="container-fluid">

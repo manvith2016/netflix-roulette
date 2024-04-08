@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <MovieDetails />,
       },
       {
-        path: "new",
+        path: "movie/add",
         element: <AddMovieForm />,
       },
       {
