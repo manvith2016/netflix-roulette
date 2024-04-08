@@ -33,7 +33,7 @@ const MovieDetails = () => {
                 <>
                         
                         <div className="movieInfoPanelItem d-flex flex-row">
-                            <img src={selectedMovieData?.poster_path} onError={(e) => e.target.src='/dummy_poster.jpeg'} className="card-img-top" alt="..." />
+                            <img src={selectedMovieData?.poster_path} onError={(e) => e.target.src='/Batman.jpeg'} className="card-img-top" alt="..." />
                             <div className='movieInfoPanel card-img-top'>
                                 <h2 data-testid="movieName">{selectedMovieData.title}</h2>
                                 <div className="year" data-testid="year">{selectedMovieData?.release_date}</div>

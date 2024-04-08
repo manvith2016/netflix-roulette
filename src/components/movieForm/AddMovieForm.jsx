@@ -28,7 +28,7 @@ const AddMovieForm = () => {
         <Dialog title="ADD MOVIE">
             <MovieForm successHandler={successHandler} failureHandler={failureHandler} />
         </Dialog>
-        {movieFormResult.isOpen && <Dialog title={""}  onClose={()=>{movieFormResult.isSuccess?navigate(-1):setMovieFormResult({isOpen: false})}}>
+        {movieFormResult.isOpen && <Dialog title={""}  onClose={()=>{movieFormResult.isSuccess?navigate("/"):setMovieFormResult({isOpen: false})}}>
             <MovieFormResult movieFormResult={movieFormResult}></MovieFormResult>
         </Dialog>}
     </>

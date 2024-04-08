@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
-import "./MovieForm.css";
-import Select from 'react-select';
-import { useForm, Controller } from 'react-hook-form';
-import { HOST, fetchGenreList } from "../../services/genreService";
+import { yupResolver } from "@hookform/resolvers/yup";
 import axios from "axios";
-import { yupResolver } from "@hookform/resolvers/yup"
-import * as yup from "yup"
+import React, { useEffect, useState } from "react";
+import { Controller, useForm } from 'react-hook-form';
+import Select from 'react-select';
+import * as yup from "yup";
+import { HOST, fetchGenreList } from "../../services/genreService";
+import "./MovieForm.css";
 
 const schema = yup
   .object({
